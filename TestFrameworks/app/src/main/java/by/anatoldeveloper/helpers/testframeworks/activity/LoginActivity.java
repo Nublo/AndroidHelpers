@@ -1,10 +1,12 @@
-package by.anatoldeveloper.helpers.testframeworks;
+package by.anatoldeveloper.helpers.testframeworks.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
-public class MainActivity extends AppCompatActivity {
+import by.anatoldeveloper.helpers.testframeworks.R;
+
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

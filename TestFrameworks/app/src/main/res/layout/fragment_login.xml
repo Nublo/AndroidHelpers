@@ -4,26 +4,40 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <EditText
-        android:id="@+id/login_login"
+    <LinearLayout
+        android:id="@+id/login_input_fields"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:hint="@string/login_hint" />
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/login_password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/login_login"
-        android:inputType="textPassword"
-        android:hint="@string/password_hint" />
+        <EditText
+            android:id="@+id/login_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:hint="@string/login_hint" />
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/password_hint" />
+
+        <TextView
+            android:id="@+id/login_invalid_credentials"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/invalid_credentials"
+            android:visibility="gone" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/login_enter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/login_password"
+        android:layout_below="@+id/login_input_fields"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:text="@string/login" />
