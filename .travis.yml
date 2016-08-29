@@ -26,7 +26,7 @@ branches:
   - master
   
 script:
-  - ./gradlew build connectedCheck --stacktrace
+  - ./gradlew build connectedCheck
 
 notifications:
   email: false
