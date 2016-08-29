@@ -64,7 +64,7 @@ public class LoginFragment extends BaseFragment {
                     public void run() {
                         closeProgressDialog();
                         invalidCredentialsTextView.setVisibility(View.VISIBLE);
-                        invalidCredentialsTextView.setText("Everything is fine");
+                        invalidCredentialsTextView.setText(getString(R.string.success_login));
                     }
                 }, 1500);
             }

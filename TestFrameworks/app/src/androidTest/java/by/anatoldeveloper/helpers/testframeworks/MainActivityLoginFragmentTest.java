@@ -1,5 +1,6 @@
 package by.anatoldeveloper.helpers.testframeworks;
 
+import android.support.test.InstrumentationRegistry;
 import android.support.test.espresso.Espresso;
 import android.support.test.espresso.IdlingResource;
 import android.support.test.espresso.matcher.ViewMatchers;
@@ -46,7 +47,8 @@ public class MainActivityLoginFragmentTest {
         onView(withId(R.id.login_enter)).perform(click());
 
         IdlingResource idlingResource = startTiming(1500);
-        onView(withId(R.id.login_invalid_credentials)).check(matches(isDisplayed())).check(matches(withText("Everything is fine")));
+        onView(withId(R.id.login_invalid_credentials)).check(matches(isDisplayed())).
+                check(matches(withText(InstrumentationRegistry.getTargetContext().getString(R.string.success_login))));
         stopTiming(idlingResource);
     }
 

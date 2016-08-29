@@ -9,4 +9,6 @@
 
     <string name="progress_waiting_title">Please wait</string>
     <string name="progress_waiting_text">Loading…</string>
+
+    <string name="success_login">Success login</string>
 </resources>
