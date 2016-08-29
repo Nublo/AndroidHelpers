@@ -11,6 +11,9 @@ android:
     - extra-android-support
     - extra-google-m2repository
 
+jdk:
+  - oraclejdk8
+
 before_script:
   - cd TestFrameworks
   - echo no | android create avd --force -n test -t android-18 --abi armeabi-v7a
