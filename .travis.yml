@@ -20,6 +20,9 @@ before_script:
 branches:
   only:
   - master
+  
+script:
+  - ./TestFrameworks/gradlew build connectedCheck
 
 notifications:
   email: false
