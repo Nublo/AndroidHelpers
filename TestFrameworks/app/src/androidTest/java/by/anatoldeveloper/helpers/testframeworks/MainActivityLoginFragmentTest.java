@@ -61,5 +61,4 @@ public class MainActivityLoginFragmentTest {
     public void stopTiming(IdlingResource idlingResource) {
         Espresso.unregisterIdlingResources(idlingResource);
     }
-
 }
