@@ -22,7 +22,7 @@ branches:
   - master
   
 script:
-  - ./TestFrameworks/gradlew build connectedCheck
+  - ./gradlew build connectedCheck
 
 notifications:
   email: false
