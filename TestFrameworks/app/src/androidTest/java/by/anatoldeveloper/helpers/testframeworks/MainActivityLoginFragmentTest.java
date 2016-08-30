@@ -12,7 +12,6 @@ import org.junit.Test;
 import by.anatoldeveloper.helpers.testframeworks.activity.LoginActivity;
 import by.anatoldeveloper.helpers.testframeworks.ui.fragments.LoginFragment;
 
-import static android.support.test.espresso.Espresso.closeSoftKeyboard;
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.action.ViewActions.typeText;
@@ -35,9 +34,7 @@ public class MainActivityLoginFragmentTest {
     public void checkErrorShowingForIncorrectUser() {
         onView(withId(R.id.login_invalid_credentials)).check(matches(withEffectiveVisibility(ViewMatchers.Visibility.GONE)));
         onView(withId(R.id.login_username)).perform(typeText("test"));
-        closeSoftKeyboard();
         onView(withId(R.id.login_password)).perform(typeText("test"));
-        closeSoftKeyboard();
         onView(withId(R.id.login_enter)).perform(click());
         onView(withId(R.id.login_invalid_credentials)).check(matches(isDisplayed()));
     }
@@ -46,9 +43,7 @@ public class MainActivityLoginFragmentTest {
     public void successLogin() {
         onView(withId(R.id.login_invalid_credentials)).check(matches(withEffectiveVisibility(ViewMatchers.Visibility.GONE)));
         onView(withId(R.id.login_username)).perform(typeText(LoginFragment.DEFAULT_LOGIN));
-        closeSoftKeyboard();
         onView(withId(R.id.login_password)).perform(typeText(LoginFragment.DEFAULT_PASSWORD));
-        closeSoftKeyboard();
         onView(withId(R.id.login_enter)).perform(click());
 
         IdlingResource idlingResource = startTiming(1500);
