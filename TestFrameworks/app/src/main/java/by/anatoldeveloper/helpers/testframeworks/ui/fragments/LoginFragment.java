@@ -42,6 +42,7 @@ public class LoginFragment extends BaseFragment {
             @Override
             public void onClick(View view) {
                 invalidCredentialsTextView.setVisibility(View.GONE);
+                invalidCredentialsTextView.setText(R.string.invalid_credentials);
                 if (isUserValid(usernameEditText.getText().toString(), passwordEditText.getText().toString())) {
                     startSuccessLoginProcess();
                 } else {
