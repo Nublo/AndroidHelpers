@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static class ListFragment extends Fragment {
 
-        private static final String[] items = {"Login Activity"};
+        private static final String[] items = {"Login Activity", "Cards Activity"};
 
         public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.items_main, container, false);
@@ -55,6 +55,10 @@ public class MainActivity extends AppCompatActivity {
                         case 0:
                             Intent loginIntent = new Intent(getContext(), LoginActivity.class);
                             startActivity(loginIntent);
+                            break;
+                        case 1:
+                            Intent cardsIntent = new Intent(getContext(), CardsActivity.class);
+                            startActivity(cardsIntent);
                             break;
                     }
                 }

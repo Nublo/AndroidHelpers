@@ -11,4 +11,10 @@
     <string name="progress_waiting_text">Loading…</string>
 
     <string name="success_login">Success login</string>
+
+    <string name="card_item_title">Image, Title, Text, Actions</string>
+    <string name="card_item_content">Same an quit most an. Admitting an mr disposing sportsmen. Tried on cause no spoil arise plate. Longer ladies valley get esteem use led six. Middletons resolution advantages expression themselves partiality so me at. West none hope if sing oh sent tell is.</string>
+    <string name="card_item_action_share">Share</string>
+    <string name="card_item_action_explore">Explore</string>
+
 </resources>
