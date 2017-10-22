@@ -18,9 +18,11 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.login.LoginActivity" />
 
         <activity android:name=".activity.CardsActivity" />
+
+        <activity android:name=".activity.RecyclerActivity" />
 
     </application>
 
