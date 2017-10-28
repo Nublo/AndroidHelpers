@@ -1,20 +1,14 @@
 <resources>
-    <string name="app_name">TestFrameworks</string>
-
-    <string name="login_hint">Username</string>
-    <string name="password_hint">Password</string>
-    <string name="login">Login</string>
-
-    <string name="invalid_credentials">Incorrect username or password</string>
-
-    <string name="progress_waiting_title">Please wait</string>
-    <string name="progress_waiting_text">Loading…</string>
-
-    <string name="success_login">Success login</string>
-
-    <string name="card_item_title">Image, Title, Text, Actions</string>
-    <string name="card_item_content">Same an quit most an. Admitting an mr disposing sportsmen. Tried on cause no spoil arise plate. Longer ladies valley get esteem use led six. Middletons resolution advantages expression themselves partiality so me at. West none hope if sing oh sent tell is.</string>
-    <string name="card_item_action_share">Share</string>
-    <string name="card_item_action_explore">Explore</string>
-
+  <string name="app">TestFrameworks</string>
+  <string name="login_button">Login</string>
+  <string name="login_hint">Username</string>
+  <string name="login_password_hint">Password</string>
+  <string name="login_success">Success login</string>
+  <string name="error_credentials">Incorrect username or password</string>
+  <string name="progress_waiting_title">Please wait</string>
+  <string name="progress_waiting_text">Loading…</string>
+  <string name="card_item_title">Image, Title, Text, Actions</string>
+  <string name="card_item_content">Same an quit most an. Admitting an mr disposing sportsmen. Tried on cause no spoil arise plate. Longer ladies valley get esteem use led six. Middletons resolution advantages expression themselves partiality so me at. West none hope if sing oh sent tell is.</string>
+  <string name="card_item_action_share">Share</string>
+  <string name="card_item_action_explore">Explore</string>
 </resources>
