@@ -19,7 +19,11 @@ android {
     }
 
     buildTypes {
+        debug {
+            build.dependsOn 'generateStrings'
+        }
         release {
+            build.dependsOn 'generateStrings'
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
