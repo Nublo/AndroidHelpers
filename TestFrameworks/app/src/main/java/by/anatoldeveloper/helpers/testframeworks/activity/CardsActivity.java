@@ -6,15 +6,17 @@ import android.support.v7.widget.Toolbar;
 
 import by.anatoldeveloper.helpers.testframeworks.R;
 
-public class LoginActivity extends AppCompatActivity {
+public class CardsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login_activity);
+        setContentView(R.layout.cards_activity);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle(R.string.app_name);
     }
+
+
 
 }
