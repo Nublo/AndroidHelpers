@@ -9,7 +9,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -28,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.main_activity);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle(R.string.app_name);
+        toolbar.setTitle(R.string.app);
 
         Fragment content = new ListFragment();
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
@@ -46,23 +45,20 @@ public class MainActivity extends AppCompatActivity {
             ArrayAdapter<String> listAdapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, items);
             hallListView.setAdapter(listAdapter);
 
-            hallListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                @Override
-                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    switch (position) {
-                        case 0:
-                            Intent loginIntent = new Intent(getContext(), LoginActivity.class);
-                            startActivity(loginIntent);
-                            break;
-                        case 1:
-                            Intent cardsIntent = new Intent(getContext(), CardsActivity.class);
-                            startActivity(cardsIntent);
-                            break;
-                        case 2:
-                            Intent recyclerIntent = new Intent(getContext(), RecyclerActivity.class);
-                            startActivity(recyclerIntent);
-                            break;
-                    }
+            hallListView.setOnItemClickListener((parent, view, position, id) -> {
+                switch (position) {
+                    case 0:
+                        Intent loginIntent = new Intent(getContext(), LoginActivity.class);
+                        startActivity(loginIntent);
+                        break;
+                    case 1:
+                        Intent cardsIntent = new Intent(getContext(), CardsActivity.class);
+                        startActivity(cardsIntent);
+                        break;
+                    case 2:
+                        Intent recyclerIntent = new Intent(getContext(), RecyclerActivity.class);
+                        startActivity(recyclerIntent);
+                        break;
                 }
             });
             return rootView;
