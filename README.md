@@ -5,4 +5,4 @@ Common stuff used in many android projects
 TestFrameworks
 ==============
 
-[![Travis Status](https://travis-ci.com/Nublo/AndroidHelpers.svg?token=H9BLWin4xEZLGfxNtDs9&branch=master)](https://travis-ci.com/Nublo/AndroidHelpers)
+[![Travis Status](https://travis-ci.org/Nublo/AndroidHelpers.svg?branch=master](https://travis-ci.org/Nublo/AndroidHelpers)
