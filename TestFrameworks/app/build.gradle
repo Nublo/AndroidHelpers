@@ -2,7 +2,6 @@ import groovy.json.JsonSlurper
 import groovy.xml.MarkupBuilder
 
 apply plugin: 'com.android.application'
-apply plugin: 'me.tatarka.retrolambda'
 
 android {
     compileSdkVersion 27

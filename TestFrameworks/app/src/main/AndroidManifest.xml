@@ -22,7 +22,7 @@
 
         <activity android:name=".activity.CardsActivity" />
 
-        <activity android:name=".activity.RecyclerActivity" />
+        <activity android:name=".activity.loginrx.LoginRxView" />
 
     </application>
 

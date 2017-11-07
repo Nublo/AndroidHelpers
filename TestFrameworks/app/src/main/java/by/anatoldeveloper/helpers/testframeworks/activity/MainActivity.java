@@ -2,6 +2,7 @@ package by.anatoldeveloper.helpers.testframeworks.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -14,6 +15,7 @@ import android.widget.ListView;
 
 import by.anatoldeveloper.helpers.testframeworks.R;
 import by.anatoldeveloper.helpers.testframeworks.activity.login.LoginActivity;
+import by.anatoldeveloper.helpers.testframeworks.activity.loginrx.LoginRxView;
 
 /**
  * Created by Nublo on 28.08.2016.
@@ -37,9 +39,9 @@ public class MainActivity extends AppCompatActivity {
 
     public static class ListFragment extends Fragment {
 
-        private static final String[] items = {"Login Activity", "Cards Activity", "Recycler Activity"};
+        private static final String[] items = {"Login Activity", "Cards Activity", "Login Reactive"};
 
-        public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.items_main, container, false);
             ListView hallListView = rootView.findViewById(R.id.items);
             ArrayAdapter<String> listAdapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_list_item_1, items);
@@ -56,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(cardsIntent);
                         break;
                     case 2:
-                        Intent recyclerIntent = new Intent(getContext(), RecyclerActivity.class);
+                        Intent recyclerIntent = new Intent(getContext(), LoginRxView.class);
                         startActivity(recyclerIntent);
                         break;
                 }
